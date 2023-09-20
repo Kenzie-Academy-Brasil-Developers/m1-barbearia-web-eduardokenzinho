@@ -71,10 +71,10 @@ function criaPedido(nomeCliente, corteId, barbaId){
       
     const pedido = {
         nome: nomeCliente,
-        pedidoCorte: corte.nome,
-        pedidoCortePreco: corte.preco, 
-        pedidoBarba: barba.nome,
-        pedidoBarbaPreco: barba.preco, 
+        pedidoCorte: corte.tipo,
+        pedidoCortePreco: corte.valor, 
+        pedidoBarba: barba.tipo,
+        pedidoBarbaPreco: barba.valor, 
     };
       
     return pedido;
